@@ -1,0 +1,154 @@
+:root {
+    --dark-green: #386641;
+    --green: #6a994e;
+    --light-green: #a7c957;
+    --red: #BC4749;
+    --black: #bddce7;
+    --charcoal:     #000000;
+    --light-gray: #dce1de;
+    --light-gray-2: #e4e7e5;
+    --white: #fffffe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background: var(--charcoal);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.header-logo {
+    height: 80px;
+}
+
+@media (max-width: 470px) {
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+header h1 a {
+    color: var(--light-gray);
+    font-family: serif;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}
+
+main {
+    height: calc(100vh - 160px);
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--light-gray-2);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    text-align: center;
+    color: var(--charcoal);
+}
+
+.login span a {
+    color: var(--red);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.block {
+    display: block;
+    margin: 5px;
+}
+
+.input-field {
+    border-radius: 0.3em;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid var(--black);
+    background-color: var(--light-gray-2);
+}
+
+.login-check {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+label a {
+    color: var(--red);
+}
+
+input[type=button] {
+    cursor: pointer;
+    border: 1px solid var(--charcoal);
+    background-color: var(--red);
+    color: var(--light-gray);
+    width: 150px;
+    height: 30px;
+    font-weight: 500;
+
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--charcoal);
+    color: var(--light-gray);
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer span a {
+    color: var(--light-gray);
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    footer {
+        font-size: 14px;
+        flex-direction: column;
+        height: unset;
+        gap: 14px;
+        padding: 5px;
+    }
+}
